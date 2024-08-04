@@ -2,29 +2,29 @@
 
 function App() {
   return (
-    <div className="h-dvh w-dvw bg-[url('/images/bg-pattern-desktop.svg')] bg-cover grid lg:grid-cols-5 lg:grid-rows-6 grid-rows-10 gap-x-8">
+    <div className="grid h-dvh w-dvw grid-rows-10 gap-x-8 bg-[url('/images/bg-pattern-desktop.svg')] bg-cover lg:grid-cols-5 lg:grid-rows-6">
       {/* logo */}
-      <div className="lg:col-start-2 lg:col-span-2 lg:row-start-2 content-center row-span-1 ml-4">
+      <div className="row-span-1 ml-4 content-center lg:col-span-2 lg:col-start-2 lg:row-start-2">
         <img src="/images/logo.svg" />
       </div>
       {/* hero */}
-      <picture className="lg:col-span-2 lg:row-span-full row-span-3">
+      <picture className="row-span-3 lg:col-span-2 lg:row-span-full">
         <source media="(max-width: 1023px)" srcSet="/images/hero-mobile.jpg" />
         <source media="(min-width: 1024px)" srcSet="/images/hero-desktop.jpg" />
         <img src="/images/hero-mobile.jpg" className="h-full w-full" />
       </picture>
       {/* content */}
-      <div className="lg:col-span-2 lg:col-start-2 max-w-[445px] lg:row-start-3 content-center text-center lg:text-start row-span-6 px-8 lg:px-0 lg:content-start w-full justify-self-center lg:justify-self-start">
-        <h1 className="uppercase lg:text-[64px] leading-[1.15] lg:mb-8 text-[40px] mb-3">
-          <span className="tracking-[0.2em] whitespace-pre-wrap">
-            <span className="text-softRed font-extralight">We're</span>
+      <div className="row-span-6 w-full max-w-[445px] content-center justify-self-center px-8 text-center lg:col-span-2 lg:col-start-2 lg:row-start-3 lg:content-start lg:justify-self-start lg:px-0 lg:text-start">
+        <h1 className="mb-3 text-[40px] uppercase leading-[1.15] lg:mb-8 lg:text-[64px]">
+          <span className="whitespace-pre-wrap tracking-[0.2em]">
+            <span className="font-extralight text-softRed">We're</span>
             <br />
             <span className="font-semibold text-darkGrayish">Coming</span>
             <br />
             <span className="font-semibold text-darkGrayish">Soon</span>
           </span>
         </h1>
-        <div className="text-softRed lg:mb-10 mb-8">
+        <div className="mb-8 text-softRed lg:mb-10">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
@@ -33,20 +33,20 @@ function App() {
           <input
             type="email"
             placeholder="Email Address"
-            className="py-4 border border-softRed rounded-full w-full leading-none pl-8 invalid:outline-desaturatedRed outline-softRed peer placeholder-softRed text-sm lg:text-base"
+            className="peer w-full rounded-full border border-softRed py-4 pl-8 text-sm leading-none placeholder-softRed outline-softRed invalid:outline-desaturatedRed lg:text-base"
           />
           <button
             type="submit"
-            className="bg-gradient-to-br from-pink-100 to-pink-200 py-4 lg:px-10 rounded-[40px] absolute right-0 top-0 hover:bg-pink-100 px-7 lg:py-5"
+            className="absolute right-0 top-0 rounded-[40px] bg-gradient-to-br from-pink-100 to-pink-200 px-7 py-4 hover:bg-pink-100 lg:px-10 lg:py-5"
           >
             <img aria-hidden src="/images/icon-arrow.svg" />
           </button>
           <img
             src="/images/icon-error.svg"
-            className="absolute right-20 lg:right-32 top-1/2 -translate-y-1/2 inv peer-invalid:visible invisible"
+            className="inv invisible absolute right-20 top-1/2 -translate-y-1/2 peer-invalid:visible lg:right-32"
             aria-hidden
           />
-          <alert className="text-desaturatedRed absolute left-8 -bottom-8 text-[13px] invisible peer-invalid:visible">
+          <alert className="invisible absolute -bottom-8 left-8 text-[13px] text-desaturatedRed peer-invalid:visible">
             Please provide a valid email
           </alert>
         </div>
