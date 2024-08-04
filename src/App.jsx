@@ -1,15 +1,15 @@
 function App() {
   return (
-    <div className="grid h-dvh w-dvw grid-rows-10 gap-x-8 bg-[url('/images/bg-pattern-desktop.svg')] bg-cover lg:grid-cols-5 lg:grid-rows-6">
+    <div className="grid h-dvh w-dvw grid-rows-10 gap-x-8 bg-[url('images/bg-pattern-desktop.svg')] bg-cover lg:grid-cols-5 lg:grid-rows-6">
       {/* logo */}
       <div className="row-span-1 ml-4 content-center lg:col-span-2 lg:col-start-2 lg:row-start-2">
-        <img src="/images/logo.svg" />
+        <img src="images/logo.svg" />
       </div>
       {/* hero */}
       <picture className="row-span-3 lg:col-span-2 lg:row-span-full">
-        <source media="(max-width: 1023px)" srcSet="/images/hero-mobile.jpg" />
-        <source media="(min-width: 1024px)" srcSet="/images/hero-desktop.jpg" />
-        <img src="/images/hero-mobile.jpg" className="size-full" />
+        <source media="(max-width: 1023px)" srcSet="images/hero-mobile.jpg" />
+        <source media="(min-width: 1024px)" srcSet="images/hero-desktop.jpg" />
+        <img src="images/hero-mobile.jpg" className="size-full" />
       </picture>
       {/* content */}
       <div className="row-span-6 w-full max-w-[445px] content-center justify-self-center px-8 text-center lg:col-span-2 lg:col-start-2 lg:row-start-3 lg:content-start lg:justify-self-start lg:px-0 lg:text-start">
@@ -37,10 +37,10 @@ function App() {
             type="submit"
             className="absolute right-0 top-0 rounded-[40px] bg-gradient-to-br from-pink-100 to-pink-200 px-7 py-4 hover:bg-pink-100 lg:px-10 lg:py-5"
           >
-            <img aria-hidden src="/images/icon-arrow.svg" />
+            <img aria-hidden src="images/icon-arrow.svg" />
           </button>
           <img
-            src="/images/icon-error.svg"
+            src="images/icon-error.svg"
             className="invisible absolute right-20 top-1/2 -translate-y-1/2 peer-invalid:visible lg:right-32"
             aria-hidden
           />
