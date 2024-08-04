@@ -2,7 +2,7 @@
 
 function App() {
   return (
-    <div className="h-dvh w-dvw bg-[url('/images/bg-pattern-desktop.svg')] bg-cover grid lg:grid-cols-5 lg:grid-rows-6 grid-rows-10">
+    <div className="h-dvh w-dvw bg-[url('/images/bg-pattern-desktop.svg')] bg-cover grid lg:grid-cols-5 lg:grid-rows-6 grid-rows-10 gap-x-8">
       {/* logo */}
       <div className="lg:col-start-2 lg:col-span-2 lg:row-start-2 content-center row-span-1 ml-4">
         <img src="/images/logo.svg" />
@@ -14,7 +14,7 @@ function App() {
         <img src="/images/hero-mobile.jpg" className="h-full w-full" />
       </picture>
       {/* content */}
-      <div className="lg:col-span-2 lg:col-start-2 max-w-[445px] lg:row-start-3 content-center text-center lg:text-start row-span-6 px-8 lg:px-0 lg:content-start">
+      <div className="lg:col-span-2 lg:col-start-2 max-w-[445px] lg:row-start-3 content-center text-center lg:text-start row-span-6 px-8 lg:px-0 lg:content-start w-full justify-self-center lg:justify-self-start">
         <h1 className="uppercase lg:text-[64px] leading-[1.15] lg:mb-8 text-[40px] mb-3">
           <span className="tracking-[0.2em] whitespace-pre-wrap">
             <span className="text-softRed font-extralight">We're</span>
@@ -33,11 +33,11 @@ function App() {
           <input
             type="email"
             placeholder="Email Address"
-            className="py-4 border border-softRed rounded-full max-w-96 w-full leading-none pl-8 invalid:outline-desaturatedRed outline-softRed peer placeholder-softRed text-sm lg:text-base"
+            className="py-4 border border-softRed rounded-full w-full leading-none pl-8 invalid:outline-desaturatedRed outline-softRed peer placeholder-softRed text-sm lg:text-base"
           />
           <button
             type="submit"
-            className="bg-gradient-to-br from-pink-100 to-pink-200 py-4 lg:px-10 rounded-[40px] absolute right-0 top-0 hover:bg-pink-100 px-7 lg:right-5 lg:py-5"
+            className="bg-gradient-to-br from-pink-100 to-pink-200 py-4 lg:px-10 rounded-[40px] absolute right-0 top-0 hover:bg-pink-100 px-7 lg:py-5"
           >
             <img aria-hidden src="/images/icon-arrow.svg" />
           </button>
