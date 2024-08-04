@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import "./App.css";
 
 function App() {
   return (
